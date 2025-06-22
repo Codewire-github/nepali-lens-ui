@@ -133,28 +133,7 @@ class _HomeViewState extends State<HomeView> {
             )
           else
             Center(child: CircularProgressIndicator()),
-          Align(
-            alignment: Alignment.topLeft,
-            child: Padding(
-              padding: const EdgeInsets.only(top: 50, left: 20),
-              child: Container(
-                height: 50,
-                width: 50,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(50),
-                  color: Colors.black.withOpacity(0.7),
-                ),
-                child: IconButton(
-                  onPressed: () => {Get.back()},
-                  icon: const Icon(
-                    Icons.arrow_back_ios_new,
-                    size: 25,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-            ),
-          ),
+
           Align(
             alignment: Alignment.topRight,
             child: Padding(
