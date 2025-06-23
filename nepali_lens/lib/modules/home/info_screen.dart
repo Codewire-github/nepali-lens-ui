@@ -145,17 +145,29 @@ class _InfoScreenUnauthorizedState extends State<InfoScreenUnauthorized> {
                               children: [
                                 const Text(
                                   "Extracted Nepali Text:",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                  ),
                                 ),
                                 const SizedBox(height: 8),
-                                Text(nepaliText),
+                                Text(
+                                  nepaliText,
+                                  style: TextStyle(fontSize: 18),
+                                ),
                                 const SizedBox(height: 20),
                                 const Text(
                                   "Translated English Text:",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                  ),
                                 ),
                                 const SizedBox(height: 8),
-                                Text(translation),
+                                Text(
+                                  translation,
+                                  style: TextStyle(fontSize: 18),
+                                ),
                               ],
                             ),
                           ),

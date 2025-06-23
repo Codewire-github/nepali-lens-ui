@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:camera/camera.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:nepali_lens/modules/home/TextToText.dart';
 import 'dart:io';
 
 import 'package:nepali_lens/modules/home/info_screen.dart';
@@ -239,6 +240,25 @@ class _HomeViewState extends State<HomeView> {
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  GestureDetector(
+                    onTap: () => {Get.to(() => TextToText())},
+                    child: Container(
+                      padding: EdgeInsets.fromLTRB(15, 5, 15, 5),
+                      decoration: BoxDecoration(
+                        color: const Color.fromARGB(255, 183, 181, 181),
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      child: Text(
+                        'Text-to-Text',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w700,
+                        ),
                       ),
                     ),
                   ),
